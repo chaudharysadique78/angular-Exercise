@@ -1,0 +1,24 @@
+<html>
+ <head>
+<title>Dynamic Loading</title>
+<script>
+
+function createDynamicDiv(){
+   var text= document.createTextNode("Welcom to my website");
+   var element= document.createElement("div");
+   element.id="div1";
+   element.style.border='5px solid red';
+   element.style.height='100px';
+   element.style.widows='100px';
+   element.appendChild(text);
+   document.getElementsByTagName("body")[0].appendChild(element);
+}
+
+</script>
+ </head>
+<body>
+
+<button onclick="createDynamicDiv()"> Create Div1 by calling function statically </button>
+
+</body>
+</html>
